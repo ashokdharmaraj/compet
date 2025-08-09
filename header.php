@@ -1,6 +1,6 @@
 <header class="site-header modern-header">
   <div class="logo-area">
-    <img src="images/dog-food.jpg" alt="Dog Food" class="header-img">
+    <a href="index.php"><img src="images/dog-food.jpg" alt="Dog Food" class="header-img"></a>
     <span class="logo-text">Compet Store</span>
   </div>
   <nav class="main-nav">
