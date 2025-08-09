@@ -241,18 +241,9 @@ if (isset($_SESSION['cart'])) {
   </style>
 </head>
 <body>
-<header class="site-header modern-header">
-  <div class="logo-area">
-    <img src="images/dog-food.jpg" alt="Dog Food" class="header-img">
-    <span class="logo-text">Compet Store</span>
-  </div>
-  <nav class="main-nav">
-    <ul>
-      <li><a href="products.php" class="active">Products</a></li>
-      <li><a href="cart.php" class="cart-link">Cart (<?php echo $cart_count; ?>)</a></li>
-    </ul>
-  </nav>
-</header>
+<?php
+require 'header.php'; // Include the header with navigation
+?>
 <main class="container">
   <?php if (isset($_GET['added'])): ?>
     <p class="notice">Product added to cart.</p>

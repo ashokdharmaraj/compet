@@ -55,22 +55,13 @@ if (!empty($_SESSION['cart'])) {
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header modern-header">
-  <div class="logo-area">
-    <img src="images/dog-food.jpg" alt="Dog Food" class="header-img">
-    <span class="logo-text">Compet Store</span>
-  </div>
-  <nav class="main-nav">
-    <ul>
-      <li><a href="products.php">Products</a></li>
-      <li><a href="cart.php" class="active cart-link">Cart</a></li>
-    </ul>
-  </nav>
-</header>
+<?php
+require 'header.php'; // Include the header with navigation
+?>
 <style>
   .modern-header {
-    background: #e3f0ff; /* Changed header background color */
-    color: #2a3d66;
+    background: #1a237e;
+    color: #fff;
     box-shadow: 0 2px 12px rgba(44,62,80,0.07);
     padding: 0.7rem 2rem;
     display: flex;
@@ -96,7 +87,7 @@ if (!empty($_SESSION['cart'])) {
     font-size: 1.7rem;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #2a3d66;
+    color: #fff;
   }
   .main-nav ul {
     list-style: none;
@@ -109,7 +100,7 @@ if (!empty($_SESSION['cart'])) {
     display: inline;
   }
   .main-nav a {
-    color: #2a3d66;
+    color: #ffe082; /* Yellow for contrast */
     text-decoration: none;
     font-size: 1.1rem;
     padding: 0.4rem 1.1rem;
@@ -120,8 +111,8 @@ if (!empty($_SESSION['cart'])) {
   }
   .main-nav a.active,
   .main-nav a:hover {
-    background: #2a3d66;
-    color: #fff;
+    background: #fff;
+    color: #1a237e;
   }
   .main-nav .cart-link::before {
     content: "🛒";
